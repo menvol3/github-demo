@@ -20,7 +20,7 @@ public class Main {
                 System.out.println(Season.SPRING);
                 break;
             case "June":
-            case "Jule":
+            case "July":
             case "August":
                 System.out.println(Season.SUMMER);
                 break;
