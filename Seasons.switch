@@ -12,25 +12,25 @@ public class Main {
             case "December":
             case "January":
             case "February":
-                System.out.println(Season.WINTER);
+                System.out.println("Current Season is " + Season.WINTER);
                 break;
             case "March":
             case "April":
             case "May":
-                System.out.println(Season.SPRING);
+                System.out.println("Current Season is " + Season.SPRING);
                 break;
             case "June":
             case "July":
             case "August":
-                System.out.println(Season.SUMMER);
+                System.out.println("Current Season is " + Season.SUMMER);
                 break;
             case "September":
             case "October":
             case "November":
-                System.out.println(Season.AUTUMN);
+                System.out.println("Current Season is " + Season.AUTUMN);
                 break;
             default:
-                System.out.println("No this month");
+                System.err.println("No this month");
         }
     }
 }
