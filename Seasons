@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main {
+    public enum Season {
+        SPRING, SUMMER, FALL, WINTER;
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("This program reports the season for a given month");
+        System.out.println("Please enter current month from 1 to 12");
+
+        int month = scanner.nextInt(); // reads the input month
+
+        if(month<1){
+            System.out.println("fail");
+        }
+        else if(month==1 || (month==2 || month==12)){
+            System.out.println(Season.WINTER);
+        }
+        else if(month==3 || (month==4 || month==5)){
+            System.out.println(Season.SPRING);
+        }
+        else if(month==6 || (month==7 || month==8)){
+            System.out.println(Season.SUMMER);
+        }
+        else if(month==9 ||(month==10 || month ==11)){
+            System.out.println(Season.FALL);
+        }else{
+            System.out.println("Invalid!");
+        }
+    }
+}
