@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main {
+    public enum Season {
+        SPRING, SUMMER, AUTUMN, WINTER;
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("This program reports the season for a given month");
+        System.out.println("Please enter current month");
+        String month = scanner.next(); // reads the input month
+        switch (month) {
+            case "December":
+            case "January":
+            case "February":
+                System.out.println(Season.WINTER);
+                break;
+            case "March":
+            case "April":
+            case "May":
+                System.out.println(Season.SPRING);
+                break;
+            case "June":
+            case "Jule":
+            case "August":
+                System.out.println(Season.SUMMER);
+                break;
+            case "September":
+            case "October":
+            case "November":
+                System.out.println(Season.AUTUMN);
+                break;
+            default:
+                System.out.println("No this month");
+        }
+    }
+}
